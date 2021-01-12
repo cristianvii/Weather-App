@@ -1,12 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-html {
+/* html {
   height:100%;
-  background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+  background-image: linear-gradient(to right top, #648CFF 0%, #3498db 100%);
+} */
+
+body {
+  margin: 0;
+  height:100%;
+  background-image: linear-gradient(to right top, #648CFF 100%, #648CFF 0%);
 }
 
 
-/* Navigation */
+/* NAVIGATION */
 nav {
   max-width: 100%;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
@@ -42,16 +48,98 @@ nav ul li a:hover {
   transition: 0.8s;
 }
 
-/* Home Section */
-#home {
-    background-color: #282C34;
-    color: white;
-    max-width: 100%;
+
+/* BUTTON */
+.button1 {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: large;
+  width: 159;
+  height: 53;
+  background-color: #FC6A42;
+  color: #fff;
+  opacity: 1;
+  border-radius: 4px;
+  margin: 5px;
+  border: none;
+}
+
+.button2 {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: large;
+  width: 159;
+  height: 53;
+  background-color: #4466C9;
+  color: #fff;
+  opacity: 1;
+  border-radius: 4px;
+  margin: 5px;
+  border: none;
 }
 
 
+/* Home Section */
+.home-text {
+  font-family: "Open Sans";
+  font-size: large;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -30%);
+  color: white;
+  width: 400px;
+}
+
+.home-text > p {
+  font-family: "Open Sans";
+  font-size: medium;
+  text-align: left;
+  color: white;
+  width: 400px;
+}
+
+.home-image {
+  background-color: #648CFF;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.phone {
+  background-image: url("../img/phone.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 605px;
+  width: 290px;
+  padding-left: 1060px;
+  padding-top: 204px;
+}
+
 /* Features section */
-#features > p {
+
+.features-text {
+  text-align: left;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.features-image {
+  margin: 0;
+  background-color: #fff;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.features > p {
     font-family: "Open Sans";
     text-align: center;
     padding-left: 20%;
@@ -59,56 +147,28 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-#features {
-    background-color: #282C34;
-    color: white;
-}
-
-
-
-
-
 /* Pricing Section */
-#pricing {
-    background-color: #282C34;
-    color: white;
-}
+.reviews {
+  font-family: "Open Sans";
+  font-size: large;
+  text-align: center;
+  color: white;
+  height: 400px;}
 
-
-
-
-footer {
-    max-width: 100%;
-    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-    margin: 0 auto;
-    padding: 60px 0;
-  }
-
-  footer ul {
-    text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
-  footer ul li {
-    display: inline-block;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
 
-  footer ul li a {
-    padding: 18px;
-    font-family: "Open Sans";
-    text-transform:uppercase;
-    color: rgba(0, 35, 122, 0.5);
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    font-weight: 600;
-  }
-  
-  footer ul li a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(0, 35, 122, 0.7);
-    transition: 0.8s;
-  }
 
+
+/* FOOTER */
